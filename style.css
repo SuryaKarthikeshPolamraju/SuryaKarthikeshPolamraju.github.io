@@ -49,7 +49,7 @@ h1, h2 {
 .title {
     font-size: 3em;
     animation: fadeIn 2s ease-in;
-    color: white;  /* White title to stand out */
+    color: blue;  /* White title to stand out */
 }
 
 .subtitle {
