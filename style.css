@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,56 +9,103 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: white;
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Heading Styles */
 h1, h2 {
     text-align: center;
-    color: #e6e9ec;
+    color: #003399;  /* Blue for headers */
     margin-bottom: 20px;
 }
 
-.section {
-    padding: 50px 0;
-}
-
+/* Home Section */
 #home {
-    background: linear-gradient(to right, #0066cc, #003399);
-    color: white;
+    background: linear-gradient(to right, #e6f2ff, #cce0ff); /* Light blue gradient */
+    color: #003399;  /* Dark blue text */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(
+        45deg, 
+        #f0f8ff 25%, 
+        transparent 25%, 
+        transparent 50%, 
+        #f0f8ff 50%, 
+        #f0f8ff 75%, 
+        transparent 75%, 
+        transparent
+    );
+    background-size: 40px 40px; /* Pinstripes */
 }
 
 .title {
     font-size: 3em;
     animation: fadeIn 2s ease-in;
+    color: white;  /* White title to stand out */
 }
 
 .subtitle {
     margin-top: 20px;
     font-size: 1.5em;
     animation: fadeIn 3s ease-in;
+    color: #003399;  /* Blue subtitle */
 }
 
+/* Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #fff;
-    color: #0056b3;
+    background-color: #003399;  /* Blue button */
+    color: white;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 30px;
     animation: fadeIn 4s ease-in;
+    border: 2px solid white;
 }
 
+.btn:hover {
+    background-color: white;
+    color: #003399;
+    transition: all 0.3s ease;
+}
+
+/* Section Pinstripe Background */
+section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    background-image: linear-gradient(
+        45deg, 
+        #f0f8ff 25%, 
+        transparent 25%, 
+        transparent 50%, 
+        #f0f8ff 50%, 
+        #f0f8ff 75%, 
+        transparent 75%, 
+        transparent
+    );
+    background-size: 40px 40px; /* Pinstripes */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Projects Section */
 #projects .project-card {
-    background: #f4f4f4;
+    background: white;
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
@@ -69,40 +117,26 @@ h1, h2 {
     transform: translateY(-10px);
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #0056b3;
+    background: #003399;
     color: white;
 }
 
+/* Animations */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-/* Add these to style.css */
-
-/* Initially hide sections */
-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
+.pulse {
+    animation: pulse 0.6s ease;
 }
 
-/* Make sections visible when scrolled into view */
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Button pulse animation */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
-}
-
-.pulse {
-    animation: pulse 0.6s ease;
 }

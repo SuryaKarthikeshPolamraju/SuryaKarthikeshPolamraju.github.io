@@ -1,5 +1,3 @@
-// script.js
-
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -14,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const sections = document.querySelectorAll('section');
 
 const options = {
-    threshold: 0.2
+    threshold: 0.2  // Adjusts how much of the section must be visible before the animation
 };
 
 const observer = new IntersectionObserver(function(entries, observer) {
@@ -38,4 +36,30 @@ document.querySelectorAll('.btn').forEach(button => {
     button.addEventListener('mouseout', function () {
         this.classList.remove('pulse');
     });
+});
+
+// Add zoom-in animation for project cards when hovered
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mouseover', function () {
+        this.style.transform = "scale(1.05)";
+        this.style.transition = "transform 0.4s ease";
+    });
+
+    card.addEventListener('mouseout', function () {
+        this.style.transform = "scale(1)";
+    });
+});
+
+// Add scroll-triggered fade-in and slide-up animation for the title in the home section
+const title = document.querySelector('.title');
+window.addEventListener('scroll', function () {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 100) {
+        title.style.transform = 'translateY(-20px)';
+        title.style.opacity = '1';
+        title.style.transition = 'transform 0.8s ease-out, opacity 0.8s ease-out';
+    } else {
+        title.style.transform = 'translateY(0)';
+        title.style.opacity = '1';
+    }
 });
