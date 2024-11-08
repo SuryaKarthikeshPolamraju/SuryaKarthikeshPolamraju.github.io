@@ -10,51 +10,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Fade-in effect when scrolling into sections
 const sections = document.querySelectorAll('section');
-
-const options = {
+const observerOptions = {
     threshold: 0.2  // Adjusts how much of the section must be visible before the animation
 };
 
-const observer = new IntersectionObserver(function(entries, observer) {
+const sectionObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
     });
-}, options);
+}, observerOptions);
 
-sections.forEach(section => {
-    observer.observe(section);
-});
+sections.forEach(section => sectionObserver.observe(section));
 
 // Button hover effect (pulse animation)
 document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('mouseover', function () {
-        this.classList.add('pulse');
-    });
-
-    button.addEventListener('mouseout', function () {
-        this.classList.remove('pulse');
-    });
+    button.addEventListener('mouseover', () => button.classList.add('pulse'));
+    button.addEventListener('mouseout', () => button.classList.remove('pulse'));
 });
 
-// Add zoom-in animation for project cards when hovered
+// Zoom-in animation for project cards on hover
 document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mouseover', function () {
-        this.style.transform = "scale(1.05)";
-        this.style.transition = "transform 0.4s ease";
+    card.addEventListener('mouseover', () => {
+        card.style.transform = "scale(1.05)";
+        card.style.transition = "transform 0.4s ease";
     });
-
-    card.addEventListener('mouseout', function () {
-        this.style.transform = "scale(1)";
-    });
+    card.addEventListener('mouseout', () => card.style.transform = "scale(1)");
 });
 
-// Add scroll-triggered fade-in and slide-up animation for the title in the home section
+// Scroll-triggered fade-in and slide-up animation for the title in the home section
 const title = document.querySelector('.title');
-window.addEventListener('scroll', function () {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition > 100) {
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
         title.style.transform = 'translateY(-20px)';
         title.style.opacity = '1';
         title.style.transition = 'transform 0.8s ease-out, opacity 0.8s ease-out';
