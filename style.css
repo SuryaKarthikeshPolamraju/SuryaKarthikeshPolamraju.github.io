@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333; /* Dark color for text */
-    background-image: url('/path/to/your/cloud-image.jpg'); /* Use the uploaded image path */
+    background-image: url('https://github.com/SuryaKarthikeshPolamraju/SuryaKarthikeshPolamraju.github.io/blob/main/pexels-padrinan-19670.jpg'); /* Use the uploaded image path */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
