@@ -8,8 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #fff;
-    background-image: url('https://raw.githubusercontent.com/SuryaKarthikeshPolamraju/SuryaKarthikeshPolamraju.github.io/main/pexels-padrinan-19670.jpg');
+    color: #333; /* Dark color for text */
+    background-image: url('/path/to/your/cloud-image.jpg'); /* Use the uploaded image path */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -19,21 +19,22 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    background-color: rgba(255, 255, 255, 0.8); /* Light overlay for readability */
     padding: 20px;
     border-radius: 8px;
+    color: #333; /* Dark color for text in container */
 }
 
 /* Heading Styles */
 h1, h2 {
     text-align: center;
-    color: #00ccff;  /* Light blue for headers */
+    color: #003366;  /* Dark blue for headers */
     margin-bottom: 20px;
 }
 
 /* Home Section */
 #home {
-    color: #00ccff;
+    color: #003366;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -44,40 +45,40 @@ h1, h2 {
 .title {
     font-size: 3em;
     animation: fadeIn 2s ease-in;
-    color: #00ccff;
+    color: #003366;
 }
 
 .subtitle {
     margin-top: 20px;
     font-size: 1.5em;
     animation: fadeIn 3s ease-in;
-    color: #fff;
+    color: #333;
 }
 
 /* Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #00ccff;
-    color: #333;
+    background-color: #003366;
+    color: white;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 30px;
     animation: fadeIn 4s ease-in;
-    border: 2px solid #fff;
+    border: 2px solid #003366;
 }
 
 .btn:hover {
     background-color: #fff;
-    color: #00ccff;
+    color: #003366;
     transition: all 0.3s ease;
 }
 
 /* Section Background */
 section {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); /* Light overlay to contrast with the background */
     padding: 50px 0;
-    color: #fff;
+    color: #333;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease-out;
@@ -90,12 +91,12 @@ section.visible {
 
 /* Projects Section */
 #projects .project-card {
-    background: #1a1a1a;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -107,8 +108,8 @@ section.visible {
 footer {
     text-align: center;
     padding: 20px;
-    background: #003399;
-    color: #fff;
+    background: #003366;
+    color: white;
 }
 
 /* Animations */
