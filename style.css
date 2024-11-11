@@ -8,69 +8,76 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: white;
+    color: #fff;
+    background-image: url('https://raw.githubusercontent.com/SuryaKarthikeshPolamraju/SuryaKarthikeshPolamraju.github.io/main/pexels-padrinan-19670.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* Container */
 .container {
     width: 80%;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 /* Heading Styles */
 h1, h2 {
     text-align: center;
-    color: #003399;  /* Blue for headers */
+    color: #00ccff;  /* Light blue for headers */
     margin-bottom: 20px;
 }
 
 /* Home Section */
 #home {
-    background: linear-gradient(to right, #e6f2ff, #cce0ff); /* Light blue gradient */
-    color: #003399;  /* Dark blue text */
+    color: #00ccff;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .title {
     font-size: 3em;
     animation: fadeIn 2s ease-in;
-    color: blue;  /* White title to stand out */
+    color: #00ccff;
 }
 
 .subtitle {
     margin-top: 20px;
     font-size: 1.5em;
     animation: fadeIn 3s ease-in;
-    color: #003399;  /* Blue subtitle */
+    color: #fff;
 }
 
 /* Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #003399;  /* Blue button */
-    color: white;
+    background-color: #00ccff;
+    color: #333;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 30px;
     animation: fadeIn 4s ease-in;
-    border: 2px solid white;
+    border: 2px solid #fff;
 }
 
 .btn:hover {
-    background-color: white;
-    color: #003399;
+    background-color: #fff;
+    color: #00ccff;
     transition: all 0.3s ease;
 }
 
 /* Section Background */
 section {
-    background-color: #f8f9fa;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 50px 0;
+    color: #fff;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease-out;
@@ -83,11 +90,12 @@ section.visible {
 
 /* Projects Section */
 #projects .project-card {
-    background: white;
+    background: #1a1a1a;
+    color: #fff;
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -100,7 +108,7 @@ footer {
     text-align: center;
     padding: 20px;
     background: #003399;
-    color: white;
+    color: #fff;
 }
 
 /* Animations */
