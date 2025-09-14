@@ -1,109 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya Karthikesh Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Polamraju Surya Karthikesh — Portfolio</title>
+  <meta name="description" content="Portfolio of Polamraju Surya Karthikesh — Software Test Engineer (NMS Testing) | Python, SQL, Linux, Shell Scripting" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Home Section -->
-    <section id="home">
-        <div class="container">
-            <h1 class="title">Polamraju Surya Karthikesh</h1>
-            <p class="subtitle">Engineer in Electronics and Communication | IoT & ML Enthusiast</p>
-            <a href="#projects" class="btn">View Projects</a>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PSK</div>
+        <div>
+          <h1>Polamraju Surya Karthikesh</h1>
+          <div class="subtitle">Software Test Engineer — NMS Testing • Python • SQL • Linux • Shell</div>
         </div>
-    </section>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="/mnt/data/PSK_Resume_TestEngineer_ATS.pdf" target="_blank">Download Resume</a>
+      </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am a highly motivated Engineer with a strong background in Electronics and Communication Engineering.
-                Experienced in IoT and ML projects, including an IoT-based Mini Rover and ML-based security systems.
-            </p>
-            <p><strong>Skills:</strong> Python, C Programming, DSA, Arduino Programming</p>
-        </div>
-    </section>
+    <main>
+      <div>
+        <section class="card hero">
+          <div class="avatar">PS</div>
+          <div>
+            <h2>Hi — I'm Surya Karthikesh</h2>
+            <p class="muted">Software Test Engineer at Tata Consultancy Services (NMS Testing). I build reliable testing pipelines for network management systems: functional & regression testing, automation with Python and Shell, log diagnostics, and reporting validation.</p>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Security System Using Roboflow</h3>
-                <p>A computer vision-based security system using cameras for real-time alerts and automatic lockdown mechanisms.</p>
+            <div class="cta">
+              <a class="btn" href="#contact">Get in touch</a>
+              <span style="margin-left:12px;color:var(--muted);font-size:13px">Based in Bengaluru, Karnataka </span>
             </div>
-            <div class="project-card">
-                <h3>Embedded IRIG Generator Using Beaglebone</h3>
-                <p>A compact device that generates precise IRIG time codes for synchronized timing in data acquisition and communication systems.</p>
-            </div>
-            <div class="project-card">
-                <h3>Smart Attendance System Using Facial Recognition</h3>
-                <p>A Raspberry Pi-based system that automates attendance through facial recognition.</p>
-            </div>
-            <div class="project-card">
-                <h3>IoT-Based Mini Rover</h3>
-                <p>Developed an IoT Mini Rover to detect poisonous gases and enhance safety in cave environments.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>Internship</h2>
-            <div class="experience-card">
-                <h3>Intern at VSSC - Indian Space Research Organization</h3>
-                <p>Feb 2024 - Mar 2024 · Thiruvananthapuram, Kerala, India</p>
-                <p>Developed a compact device that generates precise IRIG time codes for synchronized timing in systems like data acquisition and communication networks, supporting multiple IRIG formats and GPS synchronization.</p>
+            <div style="margin-top:12px" class="chips">
+              <div class="chip">NMS Testing</div>
+              <div class="chip">SNMP</div>
+              <div class="chip">Jaspersoft</div>
+              <div class="chip">OpenStack</div>
+              <div class="chip">Kubernetes</div>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
 
-    <!-- Publications Section -->
-    <section id="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <ul>
-                <li>
-                    <a href="https://shorturl.at/4EUEd" target="_blank">Embedded IRIG Generator Using BeagleBone</a> - IRJET, July 7, 2024
-                </li>
-                <li>
-                    <a href="https://ieeexplore.ieee.org/document/10522313" target="_blank">Implementation of Security System using Roboflow</a> - IEEE, May 15, 2024
-                </li>
+        <section id="about" class="card">
+          <h3>Professional Summary</h3>
+          <p class="muted">Software Test Engineer experienced in system, functional, and regression testing for Network Management Systems. Skilled in automation (Python, Shell), Linux diagnostics, SQL, and validating analytics and reporting dashboards. Strong experience with Agile practices and defect management.</p>
+        </section>
+
+        <section id="experience" class="card">
+          <h3>Experience</h3>
+          <div class="exp-item">
+            <h3>Software Test Engineer — Tata Consultancy Services, Bengaluru</h3>
+            <div class="meta">Jan 2025 – Present</div>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>Performed system, functional and regression testing for NMS applications.</li>
+              <li>Validated SNMP traps, alarms and monitoring logs to ensure fault management reliability.</li>
+              <li>Created and executed manual & automated test cases using Python and Shell scripting.</li>
+              <li>Verified Jaspersoft dashboards and analytics reporting for data accuracy.</li>
+              <li>Collaborated in Agile teams for sprint planning and defect resolution.</li>
             </ul>
-        </div>
-    </section>
+          </div>
 
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li>B. Tech, ECE - S V College of Engineering (May/2024)</li>
-                <li>Diploma, ECE - S V Government Polytechnic (June/2021)</li>
-                <li>SSC - Gautam Talent E.M. High School (May/2018)</li>
-            </ul>
-        </div>
-    </section>
+          <h4 style="margin-top:10px">Selected Projects</h4>
+          <div class="exp-item">
+            <h3>Security System Using Roboflow</h3>
+            <div class="meta">ML-based intrusion detection with real-time alerts</div>
+            <p class="muted" style="margin-top:8px">Developed a computer-vision based detection pipeline using Roboflow, integrated with alerting workflows for edge deployment.</p>
+          </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:pskarthikesh@gmail.com">pskarthikesh@gmail.com</a></p>
-            <p>Phone: 6301219834</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/polamraju-surya-karthikesh-82231b237">polamraju-surya-karthikesh</a></p>
-        </div>
-    </section>
+          <div class="exp-item">
+            <h3>Embedded IRIG Generator Using BeagleBone</h3>
+            <div class="meta">IRJET — July 2024</div>
+            <p class="muted" style="margin-top:8px">Built an IRIG time synchronization solution using BeagleBone and GPS modules (published in IRJET).</p>
+          </div>
 
-    <!-- Footer -->
+        </section>
+
+        <section id="projects" class="card">
+          <h3>Other Projects</h3>
+          <div style="display:grid;gap:10px">
+            <div class="exp-item">
+              <h3>Smart Attendance System</h3>
+              <div class="meta">Facial recognition for automated attendance</div>
+              <p class="muted">Prototype using OpenCV and local inference for reliable attendance logging.</p>
+            </div>
+
+            <div class="exp-item">
+              <h3>IoT MiniRover</h3>
+              <div class="meta">Gas detection & safety monitoring</div>
+              <p class="muted">Designed an IoT rover with gas sensors and remote telemetry for hazard detection.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="card">
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li>Functional & Regression Testing</li>
+            <li>Automation with Python & Shell</li>
+            <li>SNMP & NMS Testing</li>
+            <li>Linux Diagnostics & Log Monitoring</li>
+            <li>SQL & Data Validation</li>
+            <li>Jaspersoft Reporting</li>
+            <li>OpenStack & Kubernetes</li>
+            <li>Agile Methodologies</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Contact</h3>
+          <div class="contact-list">
+            <div><strong>Location:</strong> Tirupati, Andhra Pradesh, 517507</div>
+            <div><strong>Phone:</strong> <a href="tel:6301219834">6301219834</a></div>
+            <div><strong>Email:</strong> <a href="mailto:pskarthikesh@gmail.com">pskarthikesh@gmail.com</a></div>
+            <div><strong>Resume:</strong> <a href="/mnt/data/PSK_Resume_TestEngineer_ATS.pdf" target="_blank">Download PDF</a></div>
+          </div>
+
+          <section style="margin-top:12px">
+            <h4>Education</h4>
+            <div class="muted">B.Tech, Electronics & Communication Engineering — S V College of Engineering (May 2024) — GPA: 9.21</div>
+          </section>
+
+          <section style="margin-top:12px">
+            <h4>Certificates & Recognition</h4>
+            <div class="muted">IT Essentials (Cisco), Networking Essentials (Cisco). NTSE State 3rd Rank; Engineering Entrance Test 15th Rank.</div>
+          </section>
+
+          <section style="margin-top:12px">
+            <h4>Quick Links</h4>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <a class="chip" href="#projects">Projects</a>
+              <a class="chip" href="#experience">Experience</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="card" style="margin-top:14px;text-align:center">
+          <h4>Let's collaborate</h4>
+          <p class="muted">Open to roles in test engineering, SDET work, and projects in network / edge computing.</p>
+          <a class="btn" href="mailto:pskarthikesh@gmail.com">Email me</a>
+        </div>
+      </aside>
+    </main>
+
     <footer>
-        <p>© 2024 Polamraju Surya Karthikesh</p>
+      Built with ❤️ • Polamraju Surya Karthikesh — © <span id="year"></span>
     </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
