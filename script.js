@@ -1,12 +1,10 @@
-document.getElementById('year').textContent = new Date().getFullYear();
 
-// Smooth scroll for nav links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    const id = a.getAttribute('href');
-    if (id === '#') return;
-    const el = document.querySelector(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+/* Simple script to set active nav link and year */
+document.addEventListener('DOMContentLoaded', function(){
+  // set year
+  var y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
+  // highlight active nav link based on filename
+  var links = document.querySelectorAll('nav a');
+  var path = window.location.pathname.split('/').pop() || 'index.html';
+  links.forEach(function(a){ if(a.getAttribute('href') === path) a.classList.add('active'); });
 });
